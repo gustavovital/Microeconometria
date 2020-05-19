@@ -3,6 +3,9 @@
 
 # Pacotes Necessários ----
 
+# install.packages('WDI')
+# install.packages('Synth')
+
 library(Synth)
 
 # Base de dados ----
