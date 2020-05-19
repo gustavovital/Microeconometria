@@ -1,14 +1,9 @@
-# Analise por meio de controle sintetico utilizando os pacotes synth e gsynth
-# para contestar a fala do entao presidente da republica "A Argentina é muito 
-# menor que nós"
-# 
 # Autor: gustavoovital
 # Data: 18/05/2020
 
 # Pacotes Necessários ----
 
 library(Synth)
-library(gsynth)
 
 # Base de dados ----
 
@@ -74,7 +69,7 @@ text(22, 600, 'possível lockdown se\nfeito no 16 dia após o primeiro caso')
 
 dataprep.out.death <-
   dataprep(covid,
-           predictors = c("mais_de_65", "de_15_a_65"),
+           predictors = c("mais_de_65", "de_15_a_65", 'Confirmed'),
            dependent     = c("Death"),
            unit.variable = "unit",
            time.variable = "Time",
